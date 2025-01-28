@@ -1,0 +1,616 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<title>Footwear - Free Bootstrap 4 Template by Colorlib</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rokkitt:100,300,400,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="{{url_for('static',filename='css/animate.css')}}">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{{url_for('static',filename='css/icomoon.css')}}">
+	<!-- Ion Icon Fonts-->
+	<link rel="stylesheet" href="{{url_for('static',filename='css/ionicons.min.css')}}">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="{{url_for('static',filename='css/magnific-popup.css')}}">
+
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="{{url_for('static',filename='css/flexslider.css')}}">
+
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="{{url_for('static',filename='css/owl.carousel.min.css')}}">
+	<link rel="stylesheet" href="{{url_for('static',filename='css/owl.theme.default.min.css')}}">
+	
+	<!-- Date Picker -->
+	<link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap-datepicker.css')}}">
+	<!-- Flaticons  -->
+	<link rel="stylesheet" href="{{url_for('static',filename='fonts/flaticon/font/flaticon.css')}}">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
+<style type="text/css">
+	body{margin-top:20px;}
+	
+	.steps .step {
+		display: block;
+		width: 100%;
+		margin-bottom: 35px;
+		text-align: center
+	}
+	
+	.steps .step .step-icon-wrap {
+		display: block;
+		position: relative;
+		width: 100%;
+		height: 80px;
+		text-align: center
+	}
+	
+	.steps .step .step-icon-wrap::before,
+	.steps .step .step-icon-wrap::after {
+		display: block;
+		position: absolute;
+		top: 50%;
+		width: 50%;
+		height: 3px;
+		margin-top: -1px;
+		background-color: #e1e7ec;
+		content: '';
+		z-index: 1
+	}
+	
+	.steps .step .step-icon-wrap::before {
+		left: 0
+	}
+	
+	.steps .step .step-icon-wrap::after {
+		right: 0
+	}
+	
+	.steps .step .step-icon {
+		display: inline-block;
+		position: relative;
+		width: 80px;
+		height: 80px;
+		border: 1px solid #e1e7ec;
+		border-radius: 50%;
+		background-color: #f5f5f5;
+		color: #374250;
+		font-size: 38px;
+		line-height: 81px;
+		z-index: 5
+	}
+	
+	.steps .step .step-title {
+		margin-top: 16px;
+		margin-bottom: 0;
+		color: #606975;
+		font-size: 14px;
+		font-weight: 500
+	}
+	
+	.steps .step:first-child .step-icon-wrap::before {
+		display: none
+	}
+	
+	.steps .step:last-child .step-icon-wrap::after {
+		display: none
+	}
+	
+	.steps .step.completed .step-icon-wrap::before,
+	.steps .step.completed .step-icon-wrap::after {
+		background-color: #88c8bc
+	}
+	
+	.steps .step.completed .step-icon {
+		border-color: #88c8bc;
+		background-color: #88c8bc;
+		color: #fff
+	}
+	
+	@media (max-width: 576px) {
+		.flex-sm-nowrap .step .step-icon-wrap::before,
+		.flex-sm-nowrap .step .step-icon-wrap::after {
+			display: none
+		}
+	}
+	
+	@media (max-width: 768px) {
+		.flex-md-nowrap .step .step-icon-wrap::before,
+		.flex-md-nowrap .step .step-icon-wrap::after {
+			display: none
+		}
+	}
+	
+	@media (max-width: 991px) {
+		.flex-lg-nowrap .step .step-icon-wrap::before,
+		.flex-lg-nowrap .step .step-icon-wrap::after {
+			display: none
+		}
+	}
+	
+	@media (max-width: 1200px) {
+		.flex-xl-nowrap .step .step-icon-wrap::before,
+		.flex-xl-nowrap .step .step-icon-wrap::after {
+			display: none
+		}
+	}
+	
+	.bg-faded, .bg-secondary {
+		background-color: #f5f5f5 !important;
+	}
+	</style>
+
+	</head>
+	<body>
+		
+	<div class="colorlib-loader"></div>
+
+	<div id="page">
+		<nav class="colorlib-nav" role="navigation">
+			<div class="top-menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-7 col-md-9">
+							<div id="colorlib-logo"><a href="/">Footwear</a></div>
+						</div>
+						<div class="col-sm-5 col-md-3">
+			            <form action="#" class="search-wrap">
+			               <div class="form-group">
+			                  <input type="search" class="form-control search" placeholder="Search">
+			                  <button class="btn btn-primary submit-search text-center" type="submit"><i class="icon-search"></i></button>
+			               </div>
+			            </form>
+			         </div>
+		         </div>
+					<div class="row">
+						<div class="col-sm-12 text-left menu-1">
+							<ul>
+								<li><a href="/user">Home</a></li>
+								
+								<li><a href="/Shoes">Shoes</a></li>
+								<li><a href="/orders">Orders</a></li>
+								<li><a href="/about">About</a></li>
+								<li><a href="/contact">Contact</a></li>
+								<li><a href="/profile">Profile</a></li>
+								<li class="cart"><a href="/cart"><i class="icon-shopping-cart"></i> Cart [0]</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="sale">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-8 offset-sm-2 text-center">
+							<div class="row">
+								<div class="owl-carousel2">
+									<div class="item">
+										<div class="col">
+											<h3><a href="#">25% off (Almost) Everything! Use Code: Summer Sale</a></h3>
+										</div>
+									</div>
+									<div class="item">
+										<div class="col">
+											<h3><a href="#">Our biggest sale yet 50% off all summer shoes</a></h3>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<div class="breadcrumbs">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<p class="bread"><span><a href="/user">Home</a></span> / <span>Orders</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="colorlib-product">
+			<div class="container">
+				<div class="row row-pb-lg">
+					<div class="col-md-10 offset-md-1">
+						<div class="card mb-3">
+        
+							<div class="d-flex flex-wrap flex-sm-nowrap justify-content-between py-3 px-2 bg-secondary">
+							  <div class="w-100 text-center py-1 px-2"><span class="text-medium">Approval status:</span>{%for row in status%} {{row.4}}{%endfor%}</div>
+							  <div class="w-100 text-center py-1 px-2"><span class="text-medium">Delivery status:</span>{%for row in status%} {{row.5}}{%endfor%}</div>
+							  <div class="w-100 text-center py-1 px-2" hidden><span class="text-medium">Expected Date:</span> </div>
+							</div>
+							<div class="card-body">
+							  <div class="steps d-flex flex-wrap flex-sm-nowrap justify-content-between padding-top-2x padding-bottom-1x">
+								<div class="step completed">
+								  <div class="step-icon-wrap">
+									<div class="step-icon"><i class="pe-7s-cart"></i></div>
+								  </div>
+								  <h4 class="step-title">Confirmed Order</h4>
+								</div>
+								<div class="step completed">
+								  <div class="step-icon-wrap">
+									<div class="step-icon"><i class="pe-7s-car"></i></div>
+								  </div>
+								  <h4 class="step-title">Product Dispatched</h4>
+								</div>
+								<div class="step">
+								  <div class="step-icon-wrap">
+									<div class="step-icon"><i class="pe-7s-home"></i></div>
+								  </div>
+								  <h4 class="step-title">Product Delivered</h4>
+								</div>
+							  </div>
+							</div>
+						  </div>
+					</div>
+				</div>
+				<div class="row row-pb-lg">
+					<div class="col-md-12">
+						<div class="product-name d-flex">
+							<div class="one-forth text-left px-4">
+								<span>Product Details</span>
+							</div>
+							<div class="one-eight text-center">
+								<span>Price</span>
+							</div>
+							<div class="one-eight text-center">
+								<span>Quantity</span>
+							</div>
+							<div class="one-eight text-center">
+								<span>Total</span>
+							</div>
+							<div class="one-eight text-center px-4">
+								<span>Remove</span>
+							</div>
+						</div>
+						{%for row in orders%}
+						<div class="product-cart d-flex">
+							<div class="one-forth">
+								<div class="product-img" >
+									<img src="data:image/jpeg;base64,{{row.6}}"  class="img-fluid" alt="Free html5 bootstrap 4 template" width="90px" height="100px">
+								</div>
+								<div class="display-tc">
+									<h3> {{row.7}}</h3>
+								</div>
+							</div>
+							<div class="one-eight text-center">
+								<div class="display-tc">
+									<span class="price">${{row.15}}</span>
+								</div>
+							</div>
+							<div class="one-eight text-center">
+								<div class="display-tc">
+									<input type="text" id="quantity" name="quantity" class="form-control input-number text-center" value="{{row.2}}" readonly  >
+								</div>
+							</div>
+							<div class="one-eight text-center">
+								<div class="display-tc">
+									<span class="price">${{row.3}}</span>
+								</div>
+							</div>
+							<div class="one-eight text-center">
+								<div class="display-tc">
+									<a href="#" class="closed"></a>
+								</div>
+							</div>
+						</div>
+						{%endfor%}
+					</div>
+				</div>
+				<div class="row row-pb-lg">
+					<div class="col-md-12">
+						<div class="total-wrap">
+							<div class="row">
+								<div class="col-sm-8">
+									<form action="#">
+										<div class="row form-group">
+											<div class="col-sm-9">
+												<input type="text" name="quantity" class="form-control input-number" placeholder="Your Coupon Number..." hidden>
+											</div>
+											<div class="col-sm-3">
+												<input type="submit" value="Apply Coupon" class="btn btn-primary" hidden>
+											</div>
+										</div>
+									</form>
+								</div>
+								<div class="col-sm-4 text-center">
+									<div class="total">
+										<div class="sub">
+											{%for row in orderno%}
+											<p><span>No of Items:</span> <span>{{row.0}}</span></p>
+											{%endfor%}
+										</div>
+										<div class="grand-total">
+											
+											{%for row in sum%}
+											<p><span><strong>Total:</strong></span> <span>${{row.0}}</span></p>
+											{%endfor%}
+										</div>
+									
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-8 offset-sm-2 text-center colorlib-heading colorlib-heading-sm">
+						<h2>Previously Ordered Products</h2>
+					</div>
+				</div>
+				<div class="row">
+					{%for row in history%}
+					<div class="col-md-3 col-lg-3 mb-4 text-center">
+						<div class="product-entry border">
+							<a href="#" class="prod-img">
+								<img src="static/images/item-1.jpg" class="img-fluid" alt="Free html5 bootstrap 4 template">
+							</a>
+							<div class="desc">
+								<h2><a href="#">{{row.13}} </a></h2>
+								<span class="price">${{row.20}} </span>
+								<div class="display-tc">
+									<input type="text" id="quantity" name="quantity" class="form-control input-number text-center" value="Quantity : {{row.8}} " readonly>
+								</div>
+								<span class="price">{{row.5}} </span>
+							</div>
+							<button type="submit" class="btn btn-primary input-number text-center" data-toggle="modal" data-target="#exampleModal">RETURN</button>
+						</div>
+					</div>
+					{%endfor%}
+					<!-- <div class="col-md-3 col-lg-3 mb-4 text-center">
+						<div class="product-entry border">
+							<a href="#" class="prod-img">
+								<img src="static/images/item-2.jpg" class="img-fluid" alt="Free html5 bootstrap 4 template">
+							</a>
+							<div class="desc">
+								<h2><a href="#">Women's Minam Meaghan</a></h2>
+								<span class="price">$139.00</span>
+								<div class="display-tc">
+									<input type="text" id="quantity" name="quantity" class="form-control input-number text-center" value="2" readonly>
+								</div>
+								<span class="price">On 24-06-2016</span>
+							</div>
+						</div>
+					</div> -->
+				</div>
+				<br><br>
+				<div class="row">
+					<div class="col-sm-8 offset-sm-2 text-center colorlib-heading colorlib-heading-sm">
+						<h2>Returned Products</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-lg-3 mb-4 text-center">
+						<div class="product-entry border">
+							<a href="#" class="prod-img">
+								<img src="static/images/item-1.jpg" class="img-fluid" alt="Free html5 bootstrap 4 template">
+							</a>
+							<div class="desc">
+								<h2><a href="#">Women's Boots Shoes Maca</a></h2>
+								<span class="price">$139.00</span>
+								<div class="display-tc">
+									<input type="text" id="quantity" name="quantity" class="form-control input-number text-center" value="Quantity : 2" readonly>
+								</div>
+								<span class="price">Returned</span>
+							</div>
+							<button type="submit" class="btn btn-light input-number text-center" disabled>Returned</button>
+						</div>
+					</div>
+					<div class="col-md-3 col-lg-3 mb-4 text-center">
+						<div class="product-entry border">
+							<a href="#" class="prod-img">
+								<img src="static/images/item-2.jpg" class="img-fluid" alt="Free html5 bootstrap 4 template">
+							</a>
+							<div class="desc">
+								<h2><a href="#">Women's Minam Meaghan</a></h2>
+								<span class="price">$139.00</span>
+								<div class="display-tc">
+									<input type="text" id="quantity" name="quantity" class="form-control input-number text-center" value="Quantity : 2" readonly>
+								</div>
+								<span class="price">...</span>
+							</div>
+							<button type="submit" class="btn btn-light input-number text-center" disabled>In Progress</button>
+						</div>
+					</div>
+					<!-- <div class="col-md-3 col-lg-3 mb-4 text-center">
+						<div class="product-entry border">
+							<a href="#" class="prod-img">
+								<img src="static/images/item-3.jpg" class="img-fluid" alt="Free html5 bootstrap 4 template">
+							</a>
+							<div class="desc">
+								<h2><a href="#">Men's Taja Commissioner</a></h2>
+								<span class="price">$139.00</span>
+								<div class="display-tc">
+									<input type="text" id="quantity" name="quantity" class="form-control input-number text-center" value="2" readonly>
+								</div>
+								<span class="price">On 24-06-2016</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-lg-3 mb-4 text-center">
+						<div class="product-entry border">
+							<a href="#" class="prod-img">
+								<img src="static/images/item-4.jpg" class="img-fluid" alt="Free html5 bootstrap 4 template">
+							</a>
+							<div class="desc">
+								<h2><a href="#">Russ Men's Sneakers</a></h2>
+								<span class="price">$139.00</span>
+								<div class="display-tc">
+									<input type="text" id="quantity" name="quantity" class="form-control input-number text-center" value="2" readonly>
+								</div>
+								<span class="price">On 24-06-2016</span>
+							</div>
+						</div>
+					</div> -->
+				</div>
+			</div>
+		</div>
+
+		
+<!-- Modal -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Return Shoes</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+		  <form>
+			<div class="form-group">
+			  <label for="recipient-name" class="col-form-label">Reason for the return:</label>
+			  <!-- <input type="text" class="form-control" id="recipient-name"> -->
+			  <select class="form-control" aria-label="Default select example">
+				<option hidden></option>
+				<option value="1">Expected a diffrent color</option>
+				<option value="2">Item quality issues</option>
+				<option value="3">Item no longer wanted</option>
+			  </select>
+			</div>
+			<div class="form-group">
+			  <label for="message-text" class="col-form-label">More details :</label>
+			  <textarea class="form-control" id="message-text"></textarea>
+			</div>
+		  </form>
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+		  <button type="submit" class="btn btn-primary" data-dismiss="modal">Confirm</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+  <!-- END -->
+
+		<footer id="colorlib-footer" role="contentinfo">
+			<div class="container">
+				<div class="row row-pb-md">
+					<div class="col footer-col colorlib-widget">
+						<h4>About Footwear</h4>
+						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
+						<p>
+							<ul class="colorlib-social-icons">
+								<li><a href="#"><i class="icon-twitter"></i></a></li>
+								<li><a href="#"><i class="icon-facebook"></i></a></li>
+								<li><a href="#"><i class="icon-linkedin"></i></a></li>
+								<li><a href="#"><i class="icon-dribbble"></i></a></li>
+							</ul>
+						</p>
+					</div>
+					<div class="col footer-col colorlib-widget">
+						<h4>Customer Care</h4>
+						<p>
+							<ul class="colorlib-footer-links">
+								<li><a href="#">Contact</a></li>
+								<li><a href="#">Returns/Exchange</a></li>
+								<li><a href="#">Gift Voucher</a></li>
+								<li><a href="#">Wishlist</a></li>
+								<li><a href="#">Special</a></li>
+								<li><a href="#">Customer Services</a></li>
+								<li><a href="#">Site maps</a></li>
+							</ul>
+						</p>
+					</div>
+					<div class="col footer-col colorlib-widget">
+						<h4>Information</h4>
+						<p>
+							<ul class="colorlib-footer-links">
+								<li><a href="#">About us</a></li>
+								<li><a href="#">Delivery Information</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+								<li><a href="#">Support</a></li>
+								<li><a href="#">Order Tracking</a></li>
+							</ul>
+						</p>
+					</div>
+
+					<div class="col footer-col">
+						<h4>News</h4>
+						<ul class="colorlib-footer-links">
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="#">Press</a></li>
+							<li><a href="#">Exhibitions</a></li>
+						</ul>
+					</div>
+
+					<div class="col footer-col">
+						<h4>Contact Information</h4>
+						<ul class="colorlib-footer-links">
+							<li>291 South 21th Street, <br> Suite 721 New York NY 10016</li>
+							<li><a href="tel://1234567920">+ 1235 2355 98</a></li>
+							<li><a href="mailto:info@yoursite.com">info@yoursite.com</a></li>
+							<li><a href="#">yoursite.com</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="copy">
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<p>
+							<span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span> 
+							<span class="block">Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a> , <a href="http://pexels.com/" target="_blank">Pexels.com</a></span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="ion-ios-arrow-up"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
+   <!-- popper -->
+   <script src="{{url_for('static',filename='js/popper.min.js')}}"></script>
+   <!-- bootstrap 4.1 -->
+   <script src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
+   <!-- jQuery easing -->
+   <script src="{{url_for('static',filename='js/jquery.easing.1.3.js')}}"></script>
+	<!-- Waypoints -->
+	<script src="{{url_for('static',filename='js/jquery.waypoints.min.js')}}"></script>
+	<!-- Flexslider -->
+	<script src="{{url_for('static',filename='js/jquery.flexslider-min.js')}}"></script>
+	<!-- Owl carousel -->
+	<script src="{{url_for('static',filename='js/owl.carousel.min.js')}}"></script>
+	<!-- Magnific Popup -->
+	<script src="{{url_for('static',filename='js/jquery.magnific-popup.min.js')}}"></script>
+	<script src="{{url_for('static',filename='js/magnific-popup-options.js')}}"></script>
+	<!-- Date Picker -->
+	<script src="{{url_for('static',filename='js/bootstrap-datepicker.js')}}"></script>
+	<!-- Stellar Parallax -->
+	<script src="{{url_for('static',filename='js/jquery.stellar.min.js')}}"></script>
+	<!-- Main -->
+	<script src="{{url_for('static',filename='js/main.js')}}"></script>
+
+	<script>
+	$('#myModal').on('shown.bs.modal', function () {
+		$('#myInput').trigger('focus')
+	  })
+	</script>
+
+	</body>
+</html>
+

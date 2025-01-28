@@ -1,0 +1,451 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Footwear - Free Bootstrap 4 Template by Colorlib</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="" />
+	<meta property="og:description" content="" />
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rokkitt:100,300,400,700" rel="stylesheet">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="{{url_for('static',filename='css/animate.css')}}">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{{url_for('static',filename='css/icomoon.css')}}">
+	<!-- Ion Icon Fonts-->
+	<link rel="stylesheet" href="{{url_for('static',filename='css/ionicons.min.css')}}">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="{{url_for('static',filename='css/magnific-popup.css')}}">
+
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="{{url_for('static',filename='css/flexslider.css')}}">
+
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="{{url_for('static',filename='css/owl.carousel.min.css')}}">
+	<link rel="stylesheet" href="{{url_for('static',filename='css/owl.theme.default.min.css')}}">
+
+	<!-- Date Picker -->
+	<link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap-datepicker.css')}}">
+	<!-- Flaticons  -->
+	<link rel="stylesheet" href="{{url_for('static',filename='fonts/flaticon/font/flaticon.css')}}">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+
+</head>
+
+<body>
+
+	<div class="colorlib-loader"></div>
+
+	<div id="page">
+		<nav class="colorlib-nav" role="navigation">
+			<div class="top-menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-7 col-md-9">
+							<div id="colorlib-logo"><a href="/">Footwear</a></div>
+						</div>
+						<div class="col-sm-5 col-md-3">
+							<form action="#" class="search-wrap">
+								<div class="form-group">
+									<input type="search" class="form-control search" placeholder="Search">
+									<button class="btn btn-primary submit-search text-center" type="submit"><i
+											class="icon-search"></i></button>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 text-left menu-1">
+							<ul>
+								<li><a href="/user">Home</a></li>
+								<li><a href="/Shoes">Shoes</a></li>
+								<li><a href="/orders">Orders</a></li>
+								<li><a href="/about">About</a></li>
+								<li class="active"><a href="/contact">Contact</a></li>
+								<li><a href="/profile">Profile</a></li>
+								<li class="cart"><a href="/cart"><i class="icon-shopping-cart"></i> Cart [0]</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="sale">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-8 offset-sm-2 text-center">
+							<div class="row">
+								<div class="owl-carousel2">
+									<div class="item">
+										<div class="col">
+											<h3><a href="#">25% off (Almost) Everything! Use Code: Summer Sale</a></h3>
+										</div>
+									</div>
+									<div class="item">
+										<div class="col">
+											<h3><a href="#">Our biggest sale yet 50% off all summer shoes</a></h3>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<div class="breadcrumbs">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<p class="bread"><span><a href="/user">Home</a></span> / <span>Contact</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="colorlib-contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<h3>Contact Information</h3>
+						<div class="row contact-info-wrap">
+							<div class="col-md-3">
+								<p><span><i class="icon-location"></i></span> 198 West 21th Street, <br> Suite 721 New
+									York NY 10016</p>
+							</div>
+							<div class="col-md-3">
+								<p><span><i class="icon-phone3"></i></span> <a href="tel://1234567920">+ 1235 2355
+										98</a></p>
+							</div>
+							<div class="col-md-3">
+								<p><span><i class="icon-paperplane"></i></span> <a
+										href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+							</div>
+							<div class="col-md-3">
+								<p><span><i class="icon-globe"></i></span> <a href="#">yoursite.com</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="contact-wrap">
+							<h3>Get In Touch</h3>
+							<form action="/product-issue" class="contact-form" method="post">
+								<div class="row">
+
+									<div class="w-100"></div>
+									<br>
+									<div class="col-sm-12">
+										<div class="form-group">
+											<label for="subject">Subject</label>
+											<input type="text" name="subject" class="form-control"
+												placeholder="Your subject of this message" required>
+										</div>
+									</div>
+									<div class="w-100"></div>
+									<br><br>
+									<div class="col-sm-12">
+										<div class="form-group">
+											<label for="message">Message</label>
+											<textarea name="message" name="message" cols="30" rows="10"
+												class="form-control" placeholder="Say something about us"
+												required></textarea>
+										</div>
+									</div>
+									<div class="w-100"></div>
+									<br><br>
+									<div class="col-sm-12">
+										<div class="form-group">
+											<input type="submit" value="Send Message" class="btn btn-primary">
+											<input type="reset" value="Reset" class="btn btn-light">
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<!-- Complaints -->
+					<!-- flash  msg-->
+					<!-- {% with messages = get_flashed_messages() %}
+						{% if messages %}
+						  {% for message in messages %}
+							{{ message }}
+							{%endfor%}
+						{% endif %}
+					{% endwith %} -->
+					<!--flash msg end -->
+					<div class="col-md-6">
+						<!-- <div id="map" class="colorlib-map"></div>	 -->
+						<div class="contact-wrap">
+							<h3>Product Issues</h3>
+							<form action="/product-issue" method="post" class="contact-form">
+								<div class="row">
+
+									<div class="w-100"></div>
+									<div class="col-sm-12">
+										<div class="form-group">
+											<label for="subject">Subject</label>
+											<input type="text" name="subject" class="form-control"
+												placeholder="Your subject of this message" required>
+										</div>
+									</div>
+									&nbsp;
+									&nbsp;
+									<div class="row">
+										<div class="col">
+											<div class="w-100"></div>
+											
+												<div class="form-group">
+													<label>shoe name</label>
+													<select name="shoe" class="form-control" aria-label="Default select example" style="width:230px;">
+														<option hidden></option>
+														{%for row in shoes%}
+														<option value="{{row.0}}">{{row.2}}</option>
+														{%endfor%}
+													</select>
+												</div>
+											
+										</div>
+										<div class="col">
+											<div class="w-100"></div>
+												<div class="form-group">
+													<label>shoe category</label>
+													<select name="category" class="form-control" aria-label="Default select example" style="width:200px;">
+														<option hidden></option>
+														{%for row in category%}
+														<option value="{{row.0}}">{{row.1}}</option>
+														{%endfor%}
+													</select>
+												</div>
+											
+										</div>
+									</div>
+									<div class="row">
+										<div class="col">
+											<div class="w-100"></div>
+											<div class="col-sm-12">
+												<div class="form-group">
+													<label>shoe Brand</label>
+													<select name="brand" class="form-control" aria-label="Default select example"  style="width:200px;">
+														<option hidden></option>
+														{%for row in brand%}
+														<option value="{{row.0}}">{{row.1}}</option>
+														{%endfor%}
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="col">
+											<div class="w-100"></div>
+											<div class="col-sm-12">
+												<div class="form-group">
+													<label>shoe Type</label>
+													<select name="type" class="form-control" aria-label="Default select example" style="width:200px;">
+														<option hidden></option>
+														{%for row in type%}
+														<option value="{{row.0}}">{{row.1}}</option>
+														{%endfor%}
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col">
+											<div class="w-100"></div>
+											<div class="col-sm-12">
+												<div class="form-group">
+													<label>shoe Color</label>
+													<select name="color" class="form-control" aria-label="Default select example" style="width:200px;">
+														<option hidden></option>
+														{%for row in color%}
+														<option value="{{row.0}}">{{row.1}}</option>
+														{%endfor%}
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="col">
+											<div class="w-100"></div>
+											<div class="col-sm-12">
+												<div class="form-group">
+													<label>shoe Size</label>
+													<select name="size" class="form-control" aria-label="Default select example" style="width:200px;">
+														<option hidden></option>
+														{%for row in size%}
+														<option value="{{row.0}}">{{row.1}}</option>
+														{%endfor%}
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="w-100"></div>
+									<div class="col-sm-12">
+										<div class="form-group">
+											<label for="message">Message</label>
+											<textarea name="complaint" id="message" cols="30" rows="10"
+												class="form-control" placeholder="Say something about us"
+												required></textarea>
+										</div>
+									</div>
+									<div class="w-100"></div>
+									<div class="col-sm-12">
+										<div class="form-group">
+											<input type="submit" value="Send Message" class="btn btn-primary">
+											<input type="reset" value="Reset" class="btn btn-light">
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+
+					</div>
+					<!-- Complaints End-->
+				</div>
+			</div>
+		</div>
+
+		<footer id="colorlib-footer" role="contentinfo">
+			<div class="container">
+				<div class="row row-pb-md">
+					<div class="col footer-col colorlib-widget">
+						<h4>About Footwear</h4>
+						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost
+							unorthographic life</p>
+						<p>
+						<ul class="colorlib-social-icons">
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-linkedin"></i></a></li>
+							<li><a href="#"><i class="icon-dribbble"></i></a></li>
+						</ul>
+						</p>
+					</div>
+					<div class="col footer-col colorlib-widget">
+						<h4>Customer Care</h4>
+						<p>
+						<ul class="colorlib-footer-links">
+							<li><a href="#">Contact</a></li>
+							<li><a href="#">Returns/Exchange</a></li>
+							<li><a href="#">Gift Voucher</a></li>
+							<li><a href="#">Wishlist</a></li>
+							<li><a href="#">Special</a></li>
+							<li><a href="#">Customer Services</a></li>
+							<li><a href="#">Site maps</a></li>
+						</ul>
+						</p>
+					</div>
+					<div class="col footer-col colorlib-widget">
+						<h4>Information</h4>
+						<p>
+						<ul class="colorlib-footer-links">
+							<li><a href="#">About us</a></li>
+							<li><a href="#">Delivery Information</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Support</a></li>
+							<li><a href="#">Order Tracking</a></li>
+						</ul>
+						</p>
+					</div>
+
+					<div class="col footer-col">
+						<h4>News</h4>
+						<ul class="colorlib-footer-links">
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="#">Press</a></li>
+							<li><a href="#">Exhibitions</a></li>
+						</ul>
+					</div>
+
+					<div class="col footer-col">
+						<h4>Contact Information</h4>
+						<ul class="colorlib-footer-links">
+							<li>291 South 21th Street, <br> Suite 721 New York NY 10016</li>
+							<li><a href="tel://1234567920">+ 1235 2355 98</a></li>
+							<li><a href="mailto:info@yoursite.com">info@yoursite.com</a></li>
+							<li><a href="#">yoursite.com</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="copy">
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<p>
+							<span>
+								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+								Copyright &copy;
+								<script>document.write(new Date().getFullYear());</script> All rights reserved | This
+								template is made with <i class="icon-heart" aria-hidden="true"></i> by <a
+									href="https://colorlib.com" target="_blank">Colorlib</a>
+								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							</span>
+							<span class="block">Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a>
+								, <a href="http://pexels.com/" target="_blank">Pexels.com</a></span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="ion-ios-arrow-up"></i></a>
+	</div>
+
+	<!-- jQuery -->
+	<script src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
+	<!-- popper -->
+	<script src="{{url_for('static',filename='js/popper.min.js')}}"></script>
+	<!-- bootstrap 4.1 -->
+	<script src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
+	<!-- jQuery easing -->
+	<script src="{{url_for('static',filename='js/jquery.easing.1.3.js')}}"></script>
+	<!-- Waypoints -->
+	<script src="{{url_for('static',filename='js/jquery.waypoints.min.js')}}"></script>
+	<!-- Flexslider -->
+	<script src="{{url_for('static',filename='js/jquery.flexslider-min.js')}}"></script>
+	<!-- Owl carousel -->
+	<script src="{{url_for('static',filename='js/owl.carousel.min.js')}}"></script>
+	<!-- Magnific Popup -->
+	<script src="{{url_for('static',filename='js/jquery.magnific-popup.min.js')}}"></script>
+	<script src="{{url_for('static',filename='js/magnific-popup-options.js')}}"></script>
+	<!-- Date Picker -->
+	<script src="{{url_for('static',filename='js/bootstrap-datepicker.js')}}"></script>
+	<!-- Stellar Parallax -->
+	<script src="{{url_for('static',filename='js/jquery.stellar.min.js')}}"></script>
+	<!-- Google Map -->
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
+	<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&callback=initMap"></script>
+	<script src="{{url_for('static',filename='js/google_map.js')}}"></script>
+	<!-- Main -->
+	<script src="{{url_for('static',filename='js/main.js')}}"></script>
+
+
+</body>
+
+</html>
